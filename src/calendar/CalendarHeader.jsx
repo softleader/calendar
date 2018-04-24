@@ -33,6 +33,7 @@ const CalendarHeader = createReactClass({
     enablePrev: PropTypes.any,
     enableNext: PropTypes.any,
     disabledMonth: PropTypes.func,
+    showMinguoDate: PropTypes.bool,
   },
 
   getDefaultProps() {
@@ -41,6 +42,7 @@ const CalendarHeader = createReactClass({
       enablePrev: 1,
       onPanelChange() {},
       onValueChange() {},
+      showMinguoDate: false,
     };
   },
 
@@ -81,13 +83,15 @@ const CalendarHeader = createReactClass({
     const localeData = value.localeData();
     const monthBeforeYear = locale.monthBeforeYear;
     const selectClassName = `${prefixCls}-${monthBeforeYear ? 'my-select' : 'ym-select'}`;
+    const showMinguoDate = props.showMinguoDate;
     const year = (<a
       className={`${prefixCls}-year-select`}
       role="button"
       onClick={showTimePicker ? null : () => this.showYearPanel('date')}
       title={locale.yearSelect}
     >
-      {value.format(locale.yearFormat)}
+      {showMinguoDate ?
+        parseInt(value.format(locale.yearFormat), 10) - 1911 : value.format(locale.yearFormat)}
     </a>);
     const month = (<a
       className={`${prefixCls}-month-select`}

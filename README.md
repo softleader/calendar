@@ -22,6 +22,9 @@ React Calendar
 [download-image]: https://img.shields.io/npm/dm/rc-calendar.svg?style=flat-square
 [download-url]: https://npmjs.org/package/rc-calendar
 
+## Introduction
+fork 修改支援民國年日曆顯示
+
 ## Screenshots
 
 <img src="https://img.alicdn.com/tps/TB1mYC8KVXXXXaHXXXXXXXXXXXX-566-678.png" width="288"/>
