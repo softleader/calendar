@@ -60,7 +60,7 @@ fork 修改支援民國年日曆顯示
 ## Usage
 
 ```js
-import Calendar from 'rc-calendar';
+import Calendar from '@softleader/rc-calendar';
 import React from 'react';
 import ReactDOM from 'react-dom';
 ReactDOM.render(<Calendar />, container);
@@ -146,7 +146,7 @@ http://react-component.github.io/calendar/examples/index.html
         <tr>
           <td>locale</td>
           <td>Object</td>
-          <td>import from 'rc-calendar/lib/locale/en_US'</td>
+          <td>import from '@softleader/rc-calendar/lib/locale/en_US'</td>
           <td>calendar locale</td>
         </tr>
         <tr>
@@ -294,7 +294,7 @@ http://react-component.github.io/calendar/examples/index.html
         <tr>
           <td>locale</td>
           <td>Object</td>
-          <td>import from 'rc-calendar/lib/locale/en_US'</td>
+          <td>import from '@softleader/rc-calendar/lib/locale/en_US'</td>
           <td>calendar locale</td>
         </tr>
         <tr>
@@ -459,7 +459,7 @@ http://react-component.github.io/calendar/examples/index.html
         <tr>
           <td>locale</td>
           <td>Object</td>
-          <td>import from 'rc-calendar/lib/locale/en_US'</td>
+          <td>import from '@softleader/rc-calendar/lib/locale/en_US'</td>
           <td>calendar locale</td>
         </tr>
         <tr>

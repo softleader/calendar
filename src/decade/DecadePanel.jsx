@@ -37,6 +37,7 @@ class DecadePanel extends React.Component {
   render() {
     const value = this.state.value;
     const locale = this.props.locale;
+    const minguoDateShift = this.props.showMinguoDate ? 1911 : 0;
     const currentYear = value.year();
     const startYear = parseInt(currentYear / 100, 10) * 100;
     const preYear = startYear - 10;
@@ -70,7 +71,7 @@ class DecadePanel extends React.Component {
           [`${prefixCls}-last-century-cell`]: isLast,
           [`${prefixCls}-next-century-cell`]: isNext,
         };
-        const content = `${dStartDecade}-${dEndDecade}`;
+        const content = `${dStartDecade - minguoDateShift}-${dEndDecade - minguoDateShift}`;
         let clickHandler;
         if (isLast) {
           clickHandler = this.previousCentury;
@@ -106,7 +107,7 @@ class DecadePanel extends React.Component {
           />
 
           <div className={`${prefixCls}-century`}>
-            {startYear}-{endYear}
+            {startYear - minguoDateShift}-{endYear - minguoDateShift}
           </div>
           <a
             className={`${prefixCls}-next-century-btn`}
@@ -131,9 +132,11 @@ DecadePanel.propTypes = {
   value: PropTypes.object,
   defaultValue: PropTypes.object,
   rootPrefixCls: PropTypes.string,
+  showMinguoDate: PropTypes.bool,
 };
 
 DecadePanel.defaultProps = {
   onSelect() {
   },
+  showMinguoDate: false,
 };

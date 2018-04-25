@@ -1,13 +1,13 @@
 /* eslint react/no-multi-comp:0, no-console:0 */
 
-import 'rc-calendar/assets/index.less';
+import '@softleader/rc-calendar/assets/index.less';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import Calendar from 'rc-calendar';
-import DatePicker from 'rc-calendar/src/Picker';
-import zhCN from 'rc-calendar/src/locale/zh_CN';
-import enUS from 'rc-calendar/src/locale/en_US';
+import Calendar from '@softleader/rc-calendar';
+import DatePicker from '@softleader/rc-calendar/src/Picker';
+import zhCN from '@softleader/rc-calendar/src/locale/zh_CN';
+import enUS from '@softleader/rc-calendar/src/locale/en_US';
 
 import moment from 'moment';
 import 'moment/locale/zh-cn';

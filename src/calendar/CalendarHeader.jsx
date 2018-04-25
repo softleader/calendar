@@ -146,6 +146,7 @@ const CalendarHeader = createReactClass({
       enableNext,
       enablePrev,
       disabledMonth,
+      showMinguoDate,
     } = props;
 
     let panel = null;
@@ -160,6 +161,7 @@ const CalendarHeader = createReactClass({
           disabledDate={disabledMonth}
           cellRender={props.monthCellRender}
           contentRender={props.monthCellContentRender}
+          showMinguoDate={showMinguoDate}
         />
       );
     }
@@ -171,6 +173,7 @@ const CalendarHeader = createReactClass({
           rootPrefixCls={prefixCls}
           onSelect={this.onYearSelect}
           onDecadePanelShow={this.showDecadePanel}
+          showMinguoDate={showMinguoDate}
         />
       );
     }
@@ -181,6 +184,7 @@ const CalendarHeader = createReactClass({
           defaultValue={value}
           rootPrefixCls={prefixCls}
           onSelect={this.onDecadeSelect}
+          showMinguoDate={showMinguoDate}
         />
       );
     }

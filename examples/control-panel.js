@@ -1,9 +1,9 @@
 /* eslint react/no-multi-comp:0, no-console:0, no-unused-vars:0 */
-import 'rc-calendar/assets/index.less';
+import '@softleader/rc-calendar/assets/index.less';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Calendar from 'rc-calendar/src';
-import RangeCalendar from 'rc-calendar/src/RangeCalendar';
+import Calendar from '@softleader/rc-calendar/src';
+import RangeCalendar from '@softleader/rc-calendar/src/RangeCalendar';
 
 import Select, { Option } from 'rc-select';
 import 'rc-select/assets/index.css';

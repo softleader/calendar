@@ -82,7 +82,7 @@ const Calendar = createReactClass({
   getDefaultProps() {
     return {
       showToday: true,
-      showDateInput: true,
+      showDateInput: false,
       timePicker: null,
       onOk: noop,
       onPanelChange: noop,

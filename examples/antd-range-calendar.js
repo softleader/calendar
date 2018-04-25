@@ -2,12 +2,12 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Picker from 'rc-calendar/src/Picker';
-import RangeCalendar from 'rc-calendar/src/RangeCalendar';
-import zhCN from 'rc-calendar/src/locale/zh_CN';
-import enUS from 'rc-calendar/src/locale/en_US';
+import Picker from '@softleader/rc-calendar/src/Picker';
+import RangeCalendar from '@softleader/rc-calendar/src/RangeCalendar';
+import zhCN from '@softleader/rc-calendar/src/locale/zh_CN';
+import enUS from '@softleader/rc-calendar/src/locale/en_US';
 import TimePickerPanel from 'rc-time-picker/lib/Panel';
-import 'rc-calendar/assets/index.less';
+import '@softleader/rc-calendar/assets/index.less';
 import 'rc-time-picker/assets/index.css';
 
 import moment from 'moment';

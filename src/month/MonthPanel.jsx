@@ -18,12 +18,14 @@ const MonthPanel = createReactClass({
     onChange: PropTypes.func,
     disabledDate: PropTypes.func,
     onSelect: PropTypes.func,
+    showMinguoDate: PropTypes.bool,
   },
 
   getDefaultProps() {
     return {
       onChange: noop,
       onSelect: noop,
+      showMinguoDate: false,
     };
   },
 
@@ -72,6 +74,7 @@ const MonthPanel = createReactClass({
     const locale = props.locale;
     const year = value.year();
     const prefixCls = this.prefixCls;
+    const minguoDateShift = props.showMinguoDate ? 1911 : 0;
     return (
       <div className={prefixCls} style={props.style}>
         <div>
@@ -89,7 +92,7 @@ const MonthPanel = createReactClass({
               onClick={props.onYearPanelShow}
               title={locale.yearSelect}
             >
-              <span className={`${prefixCls}-year-select-content`}>{year}</span>
+              <span className={`${prefixCls}-year-select-content`}>{year - minguoDateShift}</span>
               <span className={`${prefixCls}-year-select-arrow`}>x</span>
             </a>
 
